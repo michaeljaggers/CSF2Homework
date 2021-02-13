@@ -53,11 +53,11 @@ namespace ClassesLibrary
         //Methods
         public override string ToString()
         {
-            //return base.ToString();
-            return string.Format("{0}, {1}\n" +
+
+            return string.Format("Student: {0}, {1}\n" +
                 "Student ID: {2}\n" +
                 "Current GPA: {3}\n",
                 LastName, FirstName, Id, Gpa);
-        }//end ToString()
+        }//end ToString
     }//end class
 }//end namespace
