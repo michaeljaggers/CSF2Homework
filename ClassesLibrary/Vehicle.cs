@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassesLibrary
 {
-    class Vehicle
+    public class Vehicle
     {
         //Fields
         private string _make;
