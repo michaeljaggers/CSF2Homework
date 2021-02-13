@@ -56,7 +56,7 @@ namespace ClassesLibrary
 
             return string.Format("Student: {0}, {1}\n" +
                 "Student ID: {2}\n" +
-                "Current GPA: {3}\n",
+                "Current GPA: {3:n2}\n",
                 LastName, FirstName, Id, Gpa);
         }//end ToString
     }//end class
