@@ -7,7 +7,7 @@ using ClassesLibrary;
 
 namespace TesterProgram
 {
-    class Program
+    class TestProgram
     {
         static void Main(string[] args)
         {
@@ -52,18 +52,32 @@ namespace TesterProgram
 
             Console.WriteLine("\n- ContactInfo Objects -\n");
 
-            ContactInfo c1 = new ContactInfo();
-            c1.StreetAddress = "1234 MAIN ST";
-            c1.City = "KANSAS CITY";
-            c1.State = "MISSOURI";
-            c1.Zip = "64154";
-            c1.Phone = "816-555-8654";
-            c1.Email = "jsmith@gmail.com";
+            ContactInfo i1 = new ContactInfo();
+            i1.StreetAddress = "1234 MAIN ST";
+            i1.City = "KANSAS CITY";
+            i1.State = "MISSOURI";
+            i1.Zip = "64154";
+            i1.Phone = "816-555-8654";
+            i1.Email = "jsmith@gmail.com";
 
-            ContactInfo c2 = new ContactInfo("2525 S WALES RD", "LIBERTY", "MISSOURI", "64068", "816-555-2868", "mhall@gmail.com");
+            ContactInfo i2 = new ContactInfo("2525 S WALES RD", "LIBERTY", "MISSOURI", "64068", "816-555-2868", "mhall@gmail.com");
+
+            Console.WriteLine(i1);
+            Console.WriteLine(i2);
+
+            Console.WriteLine("\n- Customer Objects -\n");
+
+            Customer c1 = new Customer();
+            c1.FirstName = "John";
+            c1.LastName = "Smith";
+            c1.CustomerId = "010203";
+            c1.ContactInformation = i1;
+
+            Customer c2 = new Customer("040506", "Mark", "Hall", i2);
 
             Console.WriteLine(c1);
             Console.WriteLine(c2);
+
         }//end Main
     }//end class
 }//end namespace
