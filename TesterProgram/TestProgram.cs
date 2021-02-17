@@ -78,6 +78,20 @@ namespace TesterProgram
             Console.WriteLine(c1);
             Console.WriteLine(c2);
 
+            Console.WriteLine("\n- CreditCardAccount Objects -\n");
+
+            CreditCardAccount a1 = new CreditCardAccount();
+            a1.AccountNumber = 1000098765;
+            a1.Balance = 50000.32M;
+            a1.IsPastDue = false;
+            a1.CustomerInfo = c1;
+            a1.AnnualInterestRate = 23.4M;
+
+            CreditCardAccount a2 = new CreditCardAccount(1000098766, c2, 25000.50M, true, 17.6M);
+
+            Console.WriteLine(a1);
+            Console.WriteLine(a2);
+
         }//end Main
     }//end class
 }//end namespace
