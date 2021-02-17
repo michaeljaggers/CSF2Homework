@@ -100,9 +100,34 @@ namespace TesterProgram
             b1.NumberOfPages = 394;
 
             Book b2 = new Book("Facebook For Dummies", "Carolyn Abram", 432);
+            Book b3 = new Book("Think and Grow Rich", "Napoleon Hill", 320);
+            Book b4 = new Book("The Richest Man in Babylon", "George S. Clason", 144);
 
             Console.WriteLine(b1);
             Console.WriteLine(b2);
+            Console.WriteLine(b3);
+            Console.WriteLine(b4);
+
+            Console.WriteLine("\n- Library Objects -\n");
+
+            List<Book> books1 = new List<Book>();
+            books1.Add(b1);
+            books1.Add(b2);
+
+            List<Book> books2 = new List<Book>() { b3, b4 };
+
+            Library lib1 = new Library();
+            lib1.LibraryName = "Mid-Continent Public Library";
+            lib1.StreetAddress = "8700 N OAK TRFY";
+            lib1.City = "KANSAS CITY";
+            lib1.State = "MO";
+            lib1.Zip = "64155";
+            lib1.Books = books1;
+
+            Library lib2 = new Library("New York Public Library", "203 W 115TH ST", "NEW YORK", "NY", "10026", books2);
+
+            Console.WriteLine(lib1);
+            Console.WriteLine(lib2);
 
         }//end Main
     }//end class

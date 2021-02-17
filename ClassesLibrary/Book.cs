@@ -18,7 +18,7 @@ namespace ClassesLibrary
         //Constructors
         public Book() { }
 
-        public Book(string title, string, author, int numberOfPages)
+        public Book(string title, string author, int numberOfPages)
         {
             Title = title;
             Author = Author;
