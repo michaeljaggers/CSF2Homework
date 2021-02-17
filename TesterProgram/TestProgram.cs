@@ -92,6 +92,18 @@ namespace TesterProgram
             Console.WriteLine(a1);
             Console.WriteLine(a2);
 
+            Console.WriteLine("\n- Book Objects -\n");
+
+            Book b1 = new Book();
+            b1.Title = "The Complete Idiot's Guide to the Internet";
+            b1.Author = "Peter Kent";
+            b1.NumberOfPages = 394;
+
+            Book b2 = new Book("Facebook For Dummies", "Carolyn Abram", 432);
+
+            Console.WriteLine(b1);
+            Console.WriteLine(b2);
+
         }//end Main
     }//end class
 }//end namespace
