@@ -141,6 +141,15 @@ namespace TesterProgram
             Console.WriteLine(m1);
             Console.WriteLine(m2);
 
+            Console.WriteLine("\n- Album Objects -\n");
+
+            Song[] songList1 = new Song[] {  };
+
+            Album album1 = new Album();
+            album1.Title = "Reload";
+            album1.Genre = "Metal";
+            album1.Tracks = songList1;
+
         }//end Main
     }//end class
 }//end namespace
