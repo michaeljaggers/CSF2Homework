@@ -129,6 +129,18 @@ namespace TesterProgram
             Console.WriteLine(lib1);
             Console.WriteLine(lib2);
 
+            Console.WriteLine("\n- Song Objects -\n");
+
+            Song m1 = new Song();
+            m1.Title = "For Whom the Bell Tolls";
+            m1.Artist = "Metallica";
+            m1.LengthInSeconds = 310;
+
+            Song m2 = new Song("Ride the Lightning", "Metallica", 396);
+
+            Console.WriteLine(m1);
+            Console.WriteLine(m2);
+
         }//end Main
     }//end class
 }//end namespace
