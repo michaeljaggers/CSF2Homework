@@ -18,7 +18,7 @@ namespace ClassesLibrary
         //Constructors
         public Song() { }
 
-        public Song(string artist, string title, int lengthInSeconds)
+        public Song(string title, string artist, int lengthInSeconds)
         {
             Artist = artist;
             Title = title;
