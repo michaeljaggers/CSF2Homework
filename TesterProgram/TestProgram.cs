@@ -131,24 +131,50 @@ namespace TesterProgram
 
             Console.WriteLine("\n- Song Objects -\n");
 
-            Song m1 = new Song();
-            m1.Title = "For Whom the Bell Tolls";
-            m1.Artist = "Metallica";
-            m1.LengthInSeconds = 310;
+            Song songObject1 = new Song();
+            songObject1.Title = "For Whom the Bell Tolls";
+            songObject1.Artist = "Metallica";
+            songObject1.LengthInSeconds = 310;
 
-            Song m2 = new Song("Ride the Lightning", "Metallica", 396);
+            Song songObject2 = new Song("Ride the Lightning", "Metallica", 396);
 
-            Console.WriteLine(m1);
-            Console.WriteLine(m2);
+            Console.WriteLine(songObject1);
+            Console.WriteLine(songObject2);
 
             Console.WriteLine("\n- Album Objects -\n");
 
-            Song[] songList1 = new Song[] {  };
+            //Album - Metallica: Reload
+            Song t1 = new Song("Fuel", "Metallica");
+            Song t2 = new Song("The Memory Remains", "Metallica");
+            Song t3 = new Song("Devil's Dance", "Metallica");
+            Song t4 = new Song("The Unforgiven II", "Metallica");
+            Song t5 = new Song("Better Than You", "Metallica");
+            Song t6 = new Song("Slither", "Metallica");
+            Song t7 = new Song("Carpe Diem Baby", "Metallica");
+            Song t8 = new Song("Bad Seed", "Metallica");
+            Song t9 = new Song("Where the Wild Things...", "Metallica");
+            Song t10 = new Song("Prince Charming", "Metallica");
+            Song t11 = new Song("Low Man's Lyric", "Metallica");
+            Song t12 = new Song("Attitude", "Metallica");
+            Song t13 = new Song("Fixxer", "Metallica");
+            
+            //Song Array of Song Objects
+            Song[] trackList1 = new Song[] { t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13 };
 
-            Album album1 = new Album();
-            album1.Title = "Reload";
-            album1.Genre = "Metal";
-            album1.Tracks = songList1;
+            Album album1 = new Album(trackList1, "Reload", "Metal");
+
+            //Console.WriteLine(album1);
+
+            //foreach (Song track in trackList1)
+            //{
+            //    Console.WriteLine(track);
+            //}
+
+            Console.WriteLine("\n- MotorHome Objects -\n");
+
+            MotorHome home1 = new MotorHome("Newmar", "Bay Star Sport", 2021, 20500, 3);
+
+            Console.WriteLine(home1);
 
         }//end Main
     }//end class

@@ -25,11 +25,18 @@ namespace ClassesLibrary
             LengthInSeconds = lengthInSeconds;
         }
 
+        //Additonal constructor to make adding songs easier.
+        public Song(string title, string artist)
+        {
+            Title = title;
+            Artist = artist;
+        }
+
         //Methods
         public override string ToString()
         {
-            return string.Format("\"{0}\" by {1} ({2} seconds)",
-                Title, Artist, LengthInSeconds);
+            return string.Format("{0} by {1}",
+                Title, Artist);
         }//end ToString
     }//end class
 }//end namespace
