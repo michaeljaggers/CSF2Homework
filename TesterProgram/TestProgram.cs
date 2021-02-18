@@ -176,6 +176,12 @@ namespace TesterProgram
 
             Console.WriteLine(home1);
 
+            Console.WriteLine("\n- Truck Objects -\n");
+
+            Truck truck1 = new Truck("Ford", "F-150", 2021, 4500, 10000);
+
+            Console.WriteLine(truck1);
+
         }//end Main
     }//end class
 }//end namespace

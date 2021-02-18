@@ -56,7 +56,7 @@ namespace ClassesLibrary
             return string.Format("Year: {0}\n" +
                 "Make: {1}\n" +
                 "Model: {2}\n" +
-                "Weight: {3} lbs\n",
+                "Weight: {3} lbs.\n",
                 Year, Make, Model, Weight);
         }//end ToString
     }//end class
