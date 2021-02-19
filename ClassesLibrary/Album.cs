@@ -38,7 +38,7 @@ namespace ClassesLibrary
             return string.Format("Album Title: {0}\n" +
                 "Genre: {1}\n" +
                 "Track List:\n" +
-                "{3}",
+                "{2}",
                 Title, Genre, trackList);
         }//end ToString
     }//end class

@@ -163,12 +163,7 @@ namespace TesterProgram
 
             Album album1 = new Album(trackList1, "Reload", "Metal");
 
-            //Console.WriteLine(album1);
-
-            //foreach (Song track in trackList1)
-            //{
-            //    Console.WriteLine(track);
-            //}
+            Console.WriteLine(album1);
 
             Console.WriteLine("\n- MotorHome Objects -\n");
 
